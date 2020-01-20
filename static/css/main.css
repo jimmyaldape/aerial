@@ -186,7 +186,7 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #000 url("images/bg.jpg") top left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -526,7 +526,8 @@
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 2.15em;
+			font-weight: 500;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
 		}
@@ -674,6 +675,11 @@
 					display: none;
 				}
 
+				#logo {
+		width:800px;
+		margin: 0 auto;
+	}
+
 /* Footer */
 
 	#footer {
@@ -769,7 +775,7 @@
 		}
 
 		#bg {
-			background-size: 1500px auto;
+			background-size: 1680px auto;
 			width: 4500px;
 		} }
 
@@ -851,7 +857,7 @@
 		}
 
 		#bg {
-			background-size: 750px auto;
+			background-size: 1280px auto;
 			width: 2250px;
 		} }
 
@@ -886,7 +892,7 @@
 					transform: translate3d(-300px,0,0);
 				}
 
-	}
+			}
 
 		@-webkit-keyframes bg {
 			0% {
@@ -902,7 +908,7 @@
 				-ms-transform: translate3d(-300px,0,0);
 				transform: translate3d(-300px,0,0);
 			}
-			}
+		}
 
 		@-ms-keyframes bg {
 			0% {
@@ -937,7 +943,7 @@
 		}
 
 		#bg {
-			background-size: 300px auto;
+			background-size: 736px auto;
 			width: 900px;
 		}
 
@@ -948,7 +954,8 @@
 		}
 
 		#header p {
-			font-size: 1em;
+			font-size: 1.45em;
+			font-weight: 500;
 		}
 
 		#header nav {
@@ -961,7 +968,12 @@
 
 			#header nav a:active {
 				font-size: 1em;
-			} }
+			}
+
+			#logo {
+			width:350px;
+		} 
+	}
 
 /* Mobile (Portrait) */
 
@@ -969,22 +981,22 @@
 
 		/* BG */
 
-			@-moz-keyframes bg {
-				0% {
-					-moz-transform: translate3d(0,0,0);
-					-webkit-transform: translate3d(0,0,0);
-					-ms-transform: translate3d(0,0,0);
-					transform: translate3d(0,0,0);
-				}
+		@-moz-keyframes bg {
+			0% {
+				-moz-transform: translate3d(0,0,0);
+				-webkit-transform: translate3d(0,0,0);
+				-ms-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
 
-				100% {
-					-moz-transform: translate3d(-412.5px,0,0);
-					-webkit-transform: translate3d(-412.5px,0,0);
-					-ms-transform: translate3d(-412.5px,0,0);
-					transform: translate3d(-412.5px,0,0);
-				}
+			100% {
+				-moz-transform: translate3d(-412.5px,0,0);
+				-webkit-transform: translate3d(-412.5px,0,0);
+				-ms-transform: translate3d(-412.5px,0,0);
+				transform: translate3d(-412.5px,0,0);
+			}
 
-	}
+		}
 
 		@-webkit-keyframes bg {
 			0% {
@@ -1000,7 +1012,7 @@
 				-ms-transform: translate3d(-412.5px,0,0);
 				transform: translate3d(-412.5px,0,0);
 			}
-			}
+		}
 
 		@-ms-keyframes bg {
 			0% {
@@ -1035,12 +1047,27 @@
 		}
 
 		#bg {
-			background-size: 412.5px auto;
+			background-size: 480px auto;
 			width: 1237.5px;
 		}
 
 	/* Header */
+	
+		#header{
+			margin-bottom: 50px;
+			vertical-align: bottom;
+		}
+
+		#header p {
+			font-size: 1.25em;
+			font-weight: 500;
+		}
 
 		#header nav {
 			padding: 0 1em;
-		} }
+		}
+
+		#logo {
+			width:300px;
+		} 
+	}
