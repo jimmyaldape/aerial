@@ -4,6 +4,9 @@
 		<title>{{ .Title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+		<meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}">
+		<meta name="keywords" content="{{ with .Site.Params.keywords }}{{ . }}{{ end }}">
 		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
@@ -12,6 +15,8 @@
      <link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">
      <link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
     {{ end }}
+
+	{{ template "_internal/google_analytics.html" . }}
 	</head>
 	<body class="loading">
 		<div id="wrapper">
