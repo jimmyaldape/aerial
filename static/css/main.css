@@ -186,7 +186,7 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #000 url("images/bg.jpg") top left;
+		background: #231f16 url("images/bg.jpg") top left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -1070,4 +1070,25 @@
 		#logo {
 			width:300px;
 		} 
+	}
+
+	.top-links {
+		color: #fff;
+		display:block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 200;
+	}
+
+	.top-links li {
+		padding: 10px 20px;
+	}
+
+	.top-links li a {
+		border-bottom: none;
+	}
+
+	.top-links li a:hover {
+		border-bottom: dotted 1px;
 	}
